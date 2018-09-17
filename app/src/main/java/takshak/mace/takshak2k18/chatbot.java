@@ -51,7 +51,7 @@ public class chatbot extends AppCompatActivity {
         mListView = (ListView) findViewById(R.id.listView);
         mButtonSend = (FloatingActionButton) findViewById(R.id.btn_send);
         mEditTextMessage = (EditText) findViewById(R.id.et_message);
-        mImageView = (ImageView) findViewById(R.id.iv_image);
+        //mImageView = (ImageView) findViewById(R.id.iv_image);
         mAdapter = new ChatMessageAdapter(chatbot.this, new ArrayList<ChatMessage>());
         mListView.setAdapter(mAdapter);
         mButtonSend.setOnClickListener(new View.OnClickListener() {
