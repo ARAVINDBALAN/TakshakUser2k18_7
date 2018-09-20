@@ -64,19 +64,22 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".About"
             android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegisteredEvents"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".chatbot"></activity>
+        <activity android:name=".chatbot"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Diver Official"></activity>
     </application>
 
 </manifest>
