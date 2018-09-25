@@ -54,11 +54,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Departments"
+                android:text="Categories"
                 android:shadowColor="@color/login_back"
                 android:fontFamily="@font/open_sans"
-                android:shadowDx="0"
-                android:shadowDy="0"
+                android:shadowDx="1"
+                android:shadowDy="1"
                 android:shadowRadius="5"
                 android:textColor="@color/login_back"
                 android:textSize="20dp"/>
@@ -104,37 +104,31 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
-                android:id="@+id/csedept"
                 android:layout_width="170dp"
-                android:layout_height="180dp"
-                android:layout_margin="5dp"
+                android:id="@+id/csedept"
                 android:clickable="true"
-                android:layout_weight="1"
                 android:elevation="4dp"
-                app:cardCornerRadius="5dp">
-
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                android:layout_height="180dp">
                 <LinearLayout
                     android:id="@+id/cse"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-
                     <ImageView
-                        android:id="@+id/cseicon"
                         android:layout_width="match_parent"
-                        android:layout_height="150dp" />
-
+                        android:layout_height="150dp"
+                        android:id="@+id/cseicon"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
                         android:fontFamily="@font/open_sans"
                         android:text="CSE"
-                        android:textColor="@color/black" />
-
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
-
 
         </LinearLayout>
 
